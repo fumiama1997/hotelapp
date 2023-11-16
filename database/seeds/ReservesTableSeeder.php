@@ -17,8 +17,8 @@ class ReservesTableSeeder extends Seeder
            
             'guest_id' =>'1',
             'number' =>'2',
-            'check_in' =>2023/11/18,
-            'check_out' =>2023/11/19,
+            'check_in' =>'2023/11/18',
+            'check_out' =>'2023/11/19',
         ]);
     }
 }

@@ -10,8 +10,7 @@ class Reserve extends Model
     
      public static $rules = array(
         'guest_id' => 'required',
-        'title' => 'required',
-        'message' => 'required'
+        
      );
    
      public function getdata()
