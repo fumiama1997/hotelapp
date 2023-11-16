@@ -4,7 +4,8 @@
 
 @section('menubar')
     @parent
-  下記入力の上送信ボタンを押してください
+    ここは会員登録フォームです。
+  下記内容を入力の上送信ボタンを押してください
 @endsection
 
 @section('content')

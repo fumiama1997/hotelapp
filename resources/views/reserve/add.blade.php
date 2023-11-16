@@ -4,7 +4,7 @@
 
 @section('menubar')
      @parent
-     予約ページ
+     ここは、ホテル予約フォームです。下記を入力し送信を押してください
 @endsection
 
 @section('content')
