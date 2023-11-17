@@ -17,15 +17,9 @@
             <tr>
                 <td>{{$item->getData()}}</td>
                 <td>
-                    @if ($item->rooms != null)
-                        <table width="100%">
-                            @foreach ($item->rooms as $obj)
-                                <tr>
-                                    <td>{{$obj->getData()}}</td>
-                                </tr>
-                            @endforeach
-                        </table>
-                    @endif
+                    {{-- @if ($item->room != null)
+                        {{$item->room->getData}}
+                    @endif --}}
                 </td>
             </tr>
         @endforeach
