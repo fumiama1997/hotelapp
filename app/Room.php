@@ -12,5 +12,9 @@ class Room extends Model
         'room_id'=> 'required',
         'number' => 'required',
     );
+    public function getData()
+    {
+        return $this->room_id . ': ' . $this->number;
+    }
     //
 }

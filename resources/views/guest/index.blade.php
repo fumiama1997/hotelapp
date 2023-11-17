@@ -1,28 +1,36 @@
 @extends('layouts.hotelapp')
 
-@section('title','Guest.index')
+@section('title', 'Guest.index')
 
 @section('menubar')
     @parent
-    インデックスページ
+    従業員用 予約確認一覧
 @endsection
 
 @section('content')
     <table>
         <tr>
-            <th>名前</th>
-            <th>住所</th>
-            <th>電話番号</th>
+            <th>Guest</th>
+            <th>Reserve</th>
         </tr>
-        @foreach($items as $item)
+        @foreach ($items as $item)
             <tr>
-                <td>{{$item->name}}</td>
-                <td>{{$item->address}}</td>
-                <td>{{$item->telephone_number}}</td>
+                <td>{{ $item->getData() }}</td>
+                <td>
+                    @if ($item->reserves != null)
+                        <table width="100%">
+                            @foreach ($item->reserves as $obj)
+                                <tr>
+                                    <td>{{ $obj->getData() }}</td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    @endif
+                </td>
             </tr>
         @endforeach
-</table>
+    </table>
 @endsection
 
 @section('footer')
-copyrignt 2023 fumiyaya
+    copyrignt 2023 fumiyaya

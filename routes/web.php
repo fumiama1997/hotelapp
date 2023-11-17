@@ -28,3 +28,7 @@ Route::post('reserve/add','ReserveController@create');
 Route::get('room_type','Room_typeController@index');
 
 
+Route::get('room','RoomController@index');
+
+Route::get('room/add','RoomController@add');
+Route::post('room/add','RoomController@create');

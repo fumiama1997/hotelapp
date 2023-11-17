@@ -15,7 +15,7 @@ class CreateReservesTable extends Migration
     {
         Schema::create('reserves', function (Blueprint $table) {
             $table->Increments('reserve_id');
-            $table->integer ('guest_id');
+            $table->integer ('id');
             $table->integer('number');
             $table->datetime('check_in');
             $table->datetime('check_out');

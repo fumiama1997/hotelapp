@@ -13,9 +13,9 @@ class Reserve extends Model
         
      );
    
-     public function getdata()
+     public function getData()
      {
-        return $this->id . ':' . $this->title;
+        return    'チェックイン   '. $this->check_in . '   チェックアウト' . $this->check_out. '   利用人数' . $this->number ;
      }
 
 }

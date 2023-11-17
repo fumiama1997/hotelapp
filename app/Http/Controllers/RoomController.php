@@ -21,7 +21,7 @@ class RoomController extends Controller
 
     public function create(Request $request)
     {
-        $this->varidate($request, Room::$rules);
+        $this->validate($request, Room::$rules);
         $room = new Room ;
         $form = $request->all();
         unset($form['_token']);
