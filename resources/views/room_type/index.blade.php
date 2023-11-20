@@ -17,9 +17,9 @@
             <tr>
                 <td>{{$item->getData()}}</td>
                 <td>
-                    {{-- @if ($item->room != null)
+                    @if ($item->room != null)
                         {{$item->room->getData}}
-                    @endif --}}
+                    @endif
                 </td>
             </tr>
         @endforeach

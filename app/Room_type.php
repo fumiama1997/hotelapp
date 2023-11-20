@@ -16,7 +16,7 @@ class Room_type extends Model
 
     public function getData()
     {
-        return $this->name  . $this->capacity ;
+        return $this->name  . ':'. $this->capacity ;
     }
 
     
