@@ -10,7 +10,9 @@ class Reserve extends Model
     
      public static $rules = array(
         'id' => 'required',
-        
+        'number'=>'required',
+        'check_in'=>'required',
+        'check_out'=>'required'     
      );
    
      public function getData()
