@@ -9,12 +9,17 @@ class Room extends Model
     protected $guarded = array('id');
 
     public static $rules = array(
-        'room_id'=> 'required',
+        'room_type_id'=> 'required',
         'number' => 'required',
     );
     public function getData()
     {
-        return $this->room_id . ': ' . $this->number;
+        return $this->number . '号室';
     }
-    //
+
+    public function details()
+    {
+        return $this->hasMany('App\Detail');
+    }
+    
 }

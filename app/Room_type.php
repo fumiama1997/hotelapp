@@ -16,13 +16,13 @@ class Room_type extends Model
 
     public function getData()
     {
-        return $this->name  . ':'. $this->capacity ;
+        return '部屋名：'. $this-> name  . ' 、 宿泊可能人数:'. $this->capacity ;
     }
 
     
-    public function room()
+    public function rooms()
     {
-        return $this->hasOne('App\Room');
+        return $this->hasMany('App\Room');
 
     }
 

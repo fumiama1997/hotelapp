@@ -15,10 +15,16 @@
         </tr>
         @foreach ($items as $item)
             <tr>
-                <td>{{$item->getData()}}</td>
+                <td>{{ $item->getData() }}</td>
                 <td>
-                    @if ($item->room != null)
-                        {{$item->room->getData}}
+                    @if ($item->rooms != null)
+                        <table width="100%">
+                            @foreach ($item->rooms as $obj)
+                                <tr>
+                                    <td>{{ $obj->getData() }}</td>
+                                </tr>
+                            @endforeach
+                        </table>
                     @endif
                 </td>
             </tr>

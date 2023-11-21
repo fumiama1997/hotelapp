@@ -11,7 +11,7 @@
    <form action="/room/add" method="post">
    <table>
         @csrf
-    <tr><th>room_id: </th><td><input type="number" name="room_id"></td></tr> 
+    <tr><th>room_id: </th><td><input type="number" name="room_type_id"></td></tr> 
     <tr><th>number: </th><td><input type="number" name="number"></td></tr> 
     <tr><th></th><td><input type="submit" value="send"></td></tr>   
    </table>
