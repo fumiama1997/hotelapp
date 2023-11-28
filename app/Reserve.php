@@ -9,7 +9,7 @@ class Reserve extends Model
      protected $guarded = array('reserve_id');
     
      public static $rules = array(
-        'id' => 'required',
+        'guest_id' => 'required',
         'number'=>'required',
         'check_in'=>'required',
         'check_out'=>'required'     

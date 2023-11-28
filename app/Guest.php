@@ -1,5 +1,4 @@
 <?php
-//やっと家のパソコンでデータベースにつながったぞ
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
