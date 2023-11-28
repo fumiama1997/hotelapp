@@ -10,14 +10,14 @@ class Detail extends Model
 
     public static $rules = array(
         'reserve_id'=>'required',
-        'room_id'=>'required',
+        'room_type_id'=>'required',
         'Accommodation'=>'required',
         'hotel_fee'=>'required',
     );
 
     public function getData()
     {
-        return $this->Accommodation . ':'  .$this->hotel_fee;
+        return '予約ID'.  $this->reserve_id. ':部屋ID'. $this->room_type_id.  ':宿泊日'.$this->Accommodation . ':料金'  .$this->hotel_fee;
     }
     //
 }

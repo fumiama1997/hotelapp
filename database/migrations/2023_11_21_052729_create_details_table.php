@@ -16,7 +16,7 @@ class CreateDetailsTable extends Migration
         Schema::create('details', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('reserve_id');
-            $table->integer('room_id');
+            $table->integer('room_type_id');
             $table->dateTime('Accommodation');
             $table->string('hotel_fee');
             $table->timestamps();
