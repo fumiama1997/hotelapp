@@ -1,25 +1,25 @@
 @extends('layouts.hotelapp')
 
-@section('title', 'Guest.index')
+@section('title', 'Room_type.index')
 
 @section('menubar')
     @parent
-    従業員用 予約確認一覧
+    ホテル内の部屋の名称と各部屋の宿泊可能人数を記載しています。
 @endsection
 
 @section('content')
     <table>
         <tr>
-            <th>Guest</th>
-            <th>Reserve</th>
+            <th>room_type</th>
+            <th>room</th>
         </tr>
         @foreach ($items as $item)
             <tr>
                 <td>{{ $item->getData() }}</td>
                 <td>
-                    @if ($item->reserves != null)
+                    @if ($item->rooms != null)
                         <table width="100%">
-                            @foreach ($item->reserves as $obj)
+                            @foreach ($item->rooms as $obj)
                                 <tr>
                                     <td>{{ $obj->getData() }}</td>
                                 </tr>
@@ -33,4 +33,5 @@
 @endsection
 
 @section('footer')
-    copyrignt 2023 fumiyaya
+    copyrignt 2023 fumiya.
+@endsection

@@ -1,10 +1,10 @@
 @extends('layouts.hotelapp')
 
-@section('title','Reserve.index')
+@section('title','Room.index')
 
 @section('menubar')
-      @parent
-      ボードページ
+     @parent
+    ボード・ページ
 @endsection
 
 @section('content')
@@ -32,5 +32,5 @@
 @endsection
 
 @section('footer')
-copyrignt 2023 fumiya.
+copyrignt 2023 fumiya .
 @endsection

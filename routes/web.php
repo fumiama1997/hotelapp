@@ -25,4 +25,15 @@ Route::get('reserve','ReserveController@index');
 Route::get('reserve/add','ReserveController@add');
 Route::post('reserve/add','ReserveController@create');
 
+Route::get('room_type','Room_typeController@index');
 
+
+Route::get('room','RoomController@index');
+
+Route::get('room/add','RoomController@add');
+Route::post('room/add','RoomController@create');
+
+Route::get('detail','DetailController@index');
+
+Route::get('detail/add','DetailController@add');
+Route::post('detail/add','DetailController@create');
